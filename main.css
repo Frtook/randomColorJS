@@ -1,0 +1,36 @@
+body {
+  background-color: #222;
+  color: white;
+}
+.main {
+  width: 500px;
+  height: 500px;
+  background: #444;
+  display: flex;
+  margin: 50px auto;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  border-radius: 20px;
+}
+.main .row {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+.main .row span {
+  width: 100px;
+  height: 100px;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+
+@media (max-width: 512px) {
+  .main {
+    width: 100%;
+  }
+  .main .row span {
+    width: 70px;
+    height: 70px;
+  }
+}
